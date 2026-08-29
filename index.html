@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codexa SA | Infraestructura Digital</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="preloader" id="preloader">
+        <div class="preloader-frame">
+            <img src="images/favicon.svg" alt="Codexa SA" class="preloader-icon">
+            <div class="preloader-ring"></div>
+            <div class="preloader-scan"></div>
+        </div>
+        <div class="preloader-meta">
+            <span class="preloader-code">CODEXA_SA</span>
+            <span class="preloader-status" id="preloaderStatus">INITIALIZING</span>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-brand">
+                    <div class="logo-mark">
+                        <img src="images/logo-codexa.png" alt="Codexa SA Logo">
+                    </div>
+                    <span class="brand-text">Codexa<span class="brand-sub">/SA</span></span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#inicio" class="nav-link active"><span class="nav-index"></span>Inicio</a></li>
+                    <li class="nav-item"><a href="#servicios" class="nav-link"><span class="nav-index"></span>Servicios</a></li>
+                    <li class="nav-item"><a href="#nosotros" class="nav-link"><span class="nav-index"></span>Nosotros</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link"><span class="nav-index"></span>Contacto</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-grid-bg"></div>
+            <div class="hero-lines"></div>
+            <div class="hero-content">
+                <div class="hero-meta">
+                    <span class="hero-meta-item"><span class="meta-pulse"></span>CONECTADO A CODEXA</span>
+                    <span class="hero-meta-item"></span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Arquitectura</span>
+                    <span class="title-line title-line-accent">digital</span>
+                    <span class="title-line">para negocios</span>
+                </h1>
+                <p class="hero-description">
+                    Codexa SA construye sistemas, automatizaciones e infraestructura tecnológica que operan con precisión y escalan sin fricción.
+                </p>
+                <div class="hero-actions">
+                    <a href="#servicios" class="btn-primary">Ver sistemas</a>
+                    <a href="#contacto" class="btn-ghost">Iniciar consulta</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value" data-counter="0">0</span>
+                        <span class="stat-label">Sistemas entregados</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-value" data-counter="0">0</span>
+                        <span class="stat-label">Clientes activos</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-value" data-counter="0">0</span>
+                        <span class="stat-label">Años operando</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-panel">
+                    <div class="panel-header">
+                        <span class="panel-dot panel-dot-red"></span>
+                        <span class="panel-dot panel-dot-yellow"></span>
+                        <span class="panel-dot panel-dot-green"></span>
+                        <span class="panel-title">codexa_core</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="code-line"><span class="code-prompt">$</span> system.init()</div>
+                        <div class="code-line code-line-active"><span class="code-prompt">></span> loading modules...</div>
+                        <div class="code-line"><span class="code-output">[OK] infrastructure.ready</span></div>
+                        <div class="code-line"><span class="code-output">[OK] automation.online</span></div>
+                        <div class="code-line"><span class="code-output">[OK] security.active</span></div>
+                        <div class="code-line"><span class="code-prompt">$</span> <span class="code-cursor"></span></div>
+                    </div>
+                </div>
+                <div class="visual-orb"></div>
+                <div class="visual-ring ring-1"></div>
+                <div class="visual-ring ring-2"></div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span class="scroll-text">SCROLL</span>
+                <span class="scroll-bar"><span class="scroll-progress"></span></span>
+            </div>
+        </section>
+
+        <section class="services" id="servicios">
+            <div class="services-container">
+                <div class="section-header">
+                    <div class="section-marker">
+                        <span class="marker-number">01</span>
+                        <span class="marker-line"></span>
+                    </div>
+                    <h2 class="section-title">Servicios de sistema</h2>
+                    <p class="section-description">
+                        Módulos especializados que se integran como una sola arquitectura.
+                    </p>
+                </div>
+                <div class="services-list">
+                    <div class="service-row" data-service="01">
+                        <div class="service-index">01</div>
+                        <div class="service-info">
+                            <h3 class="service-name">Mantenimiento de dispositivos</h3>
+                            <p class="service-desc">Soporte técnico preventivo y correctivo para equipos, redes y periféricos.</p>
+                        </div>
+                        <div class="service-tag">HARDWARE</div>
+                        <div class="service-arrow">↗</div>
+                    </div>
+                    <div class="service-row" data-service="02">
+                        <div class="service-index">02</div>
+                        <div class="service-info">
+                            <h3 class="service-name">Creación de landing pages</h3>
+                            <p class="service-desc">Páginas de aterrizaje optimizadas para conversión con diseño responsive.</p>
+                        </div>
+                        <div class="service-tag">WEB</div>
+                        <div class="service-arrow">↗</div>
+                    </div>
+                    <div class="service-row" data-service="03">
+                        <div class="service-index">03</div>
+                        <div class="service-info">
+                            <h3 class="service-name">Creación de sistemas</h3>
+                            <p class="service-desc">Desarrollo de software a medida: ERP, CRM, gestión de inventarios y facturación.</p>
+                        </div>
+                        <div class="service-tag">SOFTWARE</div>
+                        <div class="service-arrow">↗</div>
+                    </div>
+                    <div class="service-row" data-service="04">
+                        <div class="service-index">04</div>
+                        <div class="service-info">
+                            <h3 class="service-name">Automatización de negocios</h3>
+                            <p class="service-desc">Flujos de trabajo inteligentes que eliminan tareas repetitivas y errores humanos.</p>
+                        </div>
+                        <div class="service-tag">AUTOMATION</div>
+                        <div class="service-arrow">↗</div>
+                    </div>
+                    <div class="service-row" data-service="05">
+                        <div class="service-index">05</div>
+                        <div class="service-info">
+                            <h3 class="service-name">Bots de WhatsApp y Facebook</h3>
+                            <p class="service-desc">Asistentes virtuales que responden 24/7, atienden clientes y aumentan ventas.</p>
+                        </div>
+                        <div class="service-tag">IA</div>
+                        <div class="service-arrow">↗</div>
+                    </div>
+                    <div class="service-row" data-service="06">
+                        <div class="service-index">06</div>
+                        <div class="service-info">
+                            <h3 class="service-name">Renta de servidores</h3>
+                            <p class="service-desc">Infraestructura cloud escalable, VPS y servidores dedicados con alta disponibilidad.</p>
+                        </div>
+                        <div class="service-tag">CLOUD</div>
+                        <div class="service-arrow">↗</div>
+                    </div>
+                    <div class="service-row" data-service="07">
+                        <div class="service-index">07</div>
+                        <div class="service-info">
+                            <h3 class="service-name">Auditorías digitales</h3>
+                            <p class="service-desc">Evaluación integral de seguridad, rendimiento, SEO y experiencia de usuario.</p>
+                        </div>
+                        <div class="service-tag">SECURITY</div>
+                        <div class="service-arrow">↗</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="nosotros">
+            <div class="about-container">
+                <div class="about-logo-frame">
+                    <img src="images/favicon.svg" alt="Codexa SA">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">Codexa SA</h2>
+                    <p class="about-lead">
+                        No vendemos software. Construimos infraestructura digital que sostiene operaciones completas.
+                    </p>
+                    <p class="about-text">
+                        Diseñamos, implementamos y mantenemos sistemas que combinan ingeniería de software, automatización y seguridad. Nuestro equipo opera con metodologías ágiles y una obsesión por la precisión técnica.
+                    </p>
+                    <ul class="about-list">
+                        <li class="about-list-item">
+                            <span class="about-check">+</span> Arquitectura modular escalable
+                        </li>
+                        <li class="about-list-item">
+                            <span class="about-check">+</span> Equipo senior multidisciplinario
+                        </li>
+                        <li class="about-list-item">
+                            <span class="about-check">+</span> Soporte continuo post-entrega
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="btn-primary">Trabajar con Codexa</a>
+                </div>
+                <div class="about-visual">
+                    <!--<div class="about-logo-frame">-->
+                    <!--<img src="images/favicon.svg" alt="Codexa SA">-->
+                </div>
+                <div class="about-grid-overlay"></div>
+            </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <div class="contact-container">
+                <div class="section-marker">
+                    <span class="marker-number">03</span>
+                    <span class="marker-line"></span>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-header">
+                        <h2 class="section-title">Iniciar proyecto</h2>
+                        <p class="section-description">
+                            Cuéntanos qué necesitas construir. Respuesta en menos de 24 horas.
+                        </p>
+                        <div class="contact-direct">
+                            <div class="direct-item">
+                                <span class="direct-label">EMAIL</span>
+                                <span class="direct-value">contacto@codexa.com</span>
+                            </div>
+                            <div class="direct-item">
+                                <span class="direct-label">TELÉFONO</span>
+                                <span class="direct-value">+591 62679441</span>
+                            </div>
+                            <div class="direct-item">
+                                <span class="direct-label">UBICACIÓN</span>
+                                <span class="direct-value">Cochabamba/Bolivia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-field">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            <span class="field-border"></span>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                            <span class="field-border"></span>
+                        </div>
+                        <div class="form-field">
+                            <label for="servicio">Servicio de interés</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="">Selecciona un módulo</option>
+                                <option value="mantenimiento">Mantenimiento de dispositivos</option>
+                                <option value="landing">Creación de landing pages</option>
+                                <option value="sistemas">Creación de sistemas</option>
+                                <option value="automatizacion">Automatización de negocios</option>
+                                <option value="bots">Bots de WhatsApp y Facebook</option>
+                                <option value="servidores">Renta de servidores</option>
+                                <option value="auditorias">Auditorías digitales</option>
+                            </select>
+                            <span class="field-border"></span>
+                        </div>
+                        <div class="form-field">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe tu proyecto..." required></textarea>
+                            <span class="field-border"></span>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Enviar mensaje</button>
+                        <p class="form-success" id="formSuccess">Mensaje transmitido correctamente.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <span class="footer-code">© Nico-2026 Codexa SA</span>
+                <span class="footer-code">Todos los sistemas reservados</span>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <span class="top-arrow">↑</span>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
