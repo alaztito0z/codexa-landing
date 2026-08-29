@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactFormElement = document.querySelector('.contact-form');
     const counters = document.querySelectorAll('.stat-value');
     const logoFrame = document.querySelector('.about-logo-frame');
+    const digitalTitle = document.querySelector('.title-line-accent');
+    const rainContainer = document.querySelector('.rain-container');
     let countersAnimated = false;
 
     const statusMessages = ['INITIALIZING', 'LOADING MODULES', 'CONNECTING SYSTEMS', 'READY'];
@@ -29,11 +31,93 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, 550);
 
+    document.body.classList.add('intro-pending');
+
+    let introStarted = false;
+
+    function startIntro() {
+        if (introStarted) return;
+        introStarted = true;
+        document.body.classList.remove('intro-pending');
+        document.body.classList.add('intro-ready');
+        drawDigitalTitle();
+    }
+
+    function hidePreloader() {
+        if (!preloader) {
+            startIntro();
+            return;
+        }
+
+        preloader.addEventListener('transitionend', function(event) {
+            if (event.target === preloader && event.propertyName === 'opacity') {
+                startIntro();
+            }
+        }, { once: true });
+
+        preloader.classList.add('hidden');
+        window.setTimeout(startIntro, 850);
+    }
+
     window.addEventListener('load', function() {
-        setTimeout(function() {
-            preloader.classList.add('hidden');
-        }, 2300);
+        window.setTimeout(hidePreloader, 2300);
     });
+
+    function drawDigitalTitle() {
+        if (!digitalTitle) return;
+
+        const text = digitalTitle.dataset.drawText || digitalTitle.textContent.trim();
+        digitalTitle.textContent = '';
+
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            digitalTitle.textContent = text;
+            digitalTitle.classList.add('draw-complete');
+            return;
+        }
+
+        digitalTitle.classList.add('is-drawing');
+
+        Array.from(text).forEach(function(character, index) {
+            const letter = document.createElement('span');
+            letter.className = 'draw-letter';
+            letter.textContent = character;
+            letter.style.setProperty('--letter-index', index);
+            digitalTitle.appendChild(letter);
+        });
+
+        window.setTimeout(function() {
+            digitalTitle.classList.remove('is-drawing');
+            digitalTitle.classList.add('draw-complete');
+        }, text.length * 150 + 500);
+    }
+
+    function createColorRain() {
+        if (!rainContainer) return;
+
+        const colors = ['#00d4e0', '#5b8fdd', '#4dd7c8', '#a78bfa', '#f4d186'];
+        const dropCount = window.matchMedia('(max-width: 700px)').matches ? 26 : 48;
+
+        for (let index = 0; index < dropCount; index++) {
+            const drop = document.createElement('span');
+            drop.className = 'rain-drop';
+            drop.style.setProperty('--drop-left', (Math.random() * 100).toFixed(2) + '%');
+            drop.style.setProperty('--drop-delay', (-Math.random() * 10).toFixed(2) + 's');
+            drop.style.setProperty('--drop-duration', (5.5 + Math.random() * 5).toFixed(2) + 's');
+            drop.style.setProperty('--drop-color', colors[index % colors.length]);
+            drop.style.setProperty('--drop-height', (28 + Math.random() * 72).toFixed(0) + 'px');
+            rainContainer.appendChild(drop);
+        }
+    }
+
+    createColorRain();
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('./service-worker.js', { scope: './' }).catch(function() {
+                // The page continues to work normally when opened outside an HTTPS server.
+            });
+        });
+    }
 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
