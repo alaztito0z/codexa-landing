@@ -2,18 +2,15 @@
     "name": "Codexa SA",
     "short_name": "Codexa",
     "description": "Codexa SA - Sistemas y Soluciones Digitales",
-    "start_url": "./",
+    "id": "./",
+    "start_url": "./?source=pwa",
     "scope": "./",
     "display": "standalone",
     "orientation": "portrait-primary",
-    "background_color": "#070b14",
-    "theme_color": "#00d4e0",
-    "icons": [{
-            "src": "images/favicon.svg",
-            "sizes": "any",
-            "type": "image/svg+xml",
-            "purpose": "any"
-        },
+    "background_color": "#071426",
+    "theme_color": "#071426",
+    "display_override": ["window-controls-overlay", "standalone"],
+    "icons": [
         {
             "src": "images/icon-192.png",
             "sizes": "192x192",
@@ -24,13 +21,7 @@
             "src": "images/icon-512.png",
             "sizes": "512x512",
             "type": "image/png",
-            "purpose": "any"
-        },
-        {
-            "src": "images/icon-512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
+            "purpose": "any maskable"
         }
     ]
 }
