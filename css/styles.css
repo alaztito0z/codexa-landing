@@ -135,43 +135,23 @@ body {
 }
 
 @keyframes preloaderPulse {
-    0%,
-    100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.08);
-    }
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
 }
 
 @keyframes ringExpand {
-    0% {
-        transform: scale(0.8);
-        opacity: 0.6;
-    }
-    100% {
-        transform: scale(1.5);
-        opacity: 0;
-    }
+    0% { transform: scale(0.8); opacity: 0.6; }
+    100% { transform: scale(1.5); opacity: 0; }
 }
 
 @keyframes scanRotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 @keyframes statusBlink {
-    0%,
-    100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.3;
-    }
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
 }
 
 .header {
@@ -383,15 +363,8 @@ body {
 }
 
 @keyframes pulseDot {
-    0%,
-    100% {
-        opacity: 1;
-        box-shadow: 0 0 6px var(--green);
-    }
-    50% {
-        opacity: 0.4;
-        box-shadow: none;
-    }
+    0%, 100% { opacity: 1; box-shadow: 0 0 6px var(--green); }
+    50% { opacity: 0.4; box-shadow: none; }
 }
 
 .hero-title {
@@ -564,17 +537,9 @@ body {
     border-radius: 50%;
 }
 
-.panel-dot-red {
-    background: var(--red);
-}
-
-.panel-dot-yellow {
-    background: var(--yellow);
-}
-
-.panel-dot-green {
-    background: var(--green);
-}
+.panel-dot-red { background: var(--red); }
+.panel-dot-yellow { background: var(--yellow); }
+.panel-dot-green { background: var(--green); }
 
 .panel-title {
     margin-left: 8px;
@@ -621,13 +586,8 @@ body {
 }
 
 @keyframes cursorBlink {
-    0%,
-    100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 .visual-orb {
@@ -669,34 +629,18 @@ body {
 }
 
 @keyframes panelFloat {
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-12px);
-    }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
 }
 
 @keyframes orbPulse {
-    0%,
-    100% {
-        opacity: 0.5;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
+    0%, 100% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.1); }
 }
 
 @keyframes ringRotate {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 .hero-scroll-indicator {
@@ -737,37 +681,19 @@ body {
 }
 
 @keyframes scrollProgress {
-    0% {
-        height: 0%;
-    }
-    50% {
-        height: 100%;
-    }
-    100% {
-        height: 0%;
-    }
+    0% { height: 0%; }
+    50% { height: 100%; }
+    100% { height: 0%; }
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInScale {
-    from {
-        opacity: 0;
-        transform: scale(0.85);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
 }
 
 .services {
@@ -1081,32 +1007,14 @@ body {
 }
 
 @keyframes logoReveal {
-    0% {
-        opacity: 0;
-        transform: scale(0.8);
-        filter: blur(6px);
-    }
-    60% {
-        opacity: 1;
-        transform: scale(1.05);
-        filter: blur(0);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-        filter: blur(0);
-    }
+    0% { opacity: 0; transform: scale(0.8); filter: blur(6px); }
+    60% { opacity: 1; transform: scale(1.05); filter: blur(0); }
+    100% { opacity: 1; transform: scale(1); filter: blur(0); }
 }
 
 @keyframes ringPulse {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(1.6);
-    }
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.6); }
 }
 
 .about-logo-frame:hover {
@@ -1129,18 +1037,9 @@ body {
 }
 
 @keyframes hoverRingPulse {
-    0% {
-        opacity: 0.8;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.3;
-        transform: scale(1.1);
-    }
-    100% {
-        opacity: 0.8;
-        transform: scale(1);
-    }
+    0% { opacity: 0.8; transform: scale(1); }
+    50% { opacity: 0.3; transform: scale(1.1); }
+    100% { opacity: 0.8; transform: scale(1); }
 }
 
 .about-grid-overlay {
@@ -1463,56 +1362,52 @@ body {
         gap: 8px;
         text-align: center;
     }
-    @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .hero-content {
         padding: 0 16px;
     }
-
     .hero-meta {
         flex-wrap: wrap;
         gap: 10px;
     }
-
     .hero-title {
-        font-size: clamp(1.6rem, 8vw, 2.2rem);
+        font-size: 1.8rem;
         letter-spacing: -1px;
+        margin-bottom: 16px;
     }
-
     .hero-description {
         font-size: 0.85rem;
+        max-width: 100%;
+        margin-bottom: 24px;
     }
-
     .hero-actions {
         flex-direction: column;
         width: 100%;
+        gap: 10px;
     }
-
     .btn-primary,
     .btn-ghost {
         width: 100%;
         justify-content: center;
     }
-
     .hero-stats {
         gap: 10px;
+        justify-content: space-between;
     }
-
     .stat-value {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
-
     .stat-label {
         font-size: 0.55rem;
     }
-
     .visual-panel {
         max-width: 100%;
     }
-
     .services {
         padding: 60px 0;
     }
-
     .services-container,
     .about-container,
     .contact-container,
@@ -1520,106 +1415,84 @@ body {
         padding-left: 16px;
         padding-right: 16px;
     }
-
     .section-title {
         font-size: 1.6rem;
     }
-
     .section-description {
         font-size: 0.85rem;
     }
-
     .service-row {
         grid-template-columns: 30px 1fr;
         gap: 8px;
         padding: 16px 8px;
     }
-
     .service-tag {
         display: none;
     }
-
     .service-desc {
         max-width: 100%;
     }
-
     .about {
         padding: 60px 0;
     }
-
     .about-container {
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
-
     .about-logo-frame {
         width: 140px;
         height: 140px;
         margin: 0 auto;
     }
-
     .about-logo-frame img {
         width: 80px;
         height: 80px;
     }
-
     .about-grid-overlay {
         inset: -20px;
     }
-
     .about-lead {
         font-size: 1.1rem;
     }
-
     .about-text {
         font-size: 0.85rem;
     }
-
     .about-list-item {
         font-size: 0.85rem;
     }
-
     .contact {
         padding: 60px 0;
     }
-
     .contact-grid {
         gap: 30px;
     }
-
     .contact-form {
         padding: 0;
     }
-
     .form-field input,
     .form-field select,
     .form-field textarea {
         font-size: 0.85rem;
         padding: 10px 12px;
     }
-
     .footer {
         padding: 20px 0;
     }
-
     .footer-top {
         flex-direction: column;
         gap: 8px;
         text-align: center;
     }
-
     .back-to-top {
         bottom: 20px;
         right: 20px;
         width: 40px;
         height: 40px;
     }
-
     .scroll-text {
         display: none;
     }
-
     .hero-scroll-indicator {
         bottom: 15px;
     }
@@ -1629,27 +1502,21 @@ body {
     .hero-title {
         font-size: 1.5rem;
     }
-
     .hero-description {
         font-size: 0.8rem;
     }
-
     .stat-value {
         font-size: 1rem;
     }
-
     .nav-brand .brand-text {
         font-size: 1rem;
     }
-
     .logo-mark {
         width: 32px;
         height: 32px;
     }
-
     .preloader-icon {
         width: 50px;
         height: 50px;
     }
-}
 }
