@@ -1463,4 +1463,193 @@ body {
         gap: 8px;
         text-align: center;
     }
+    @media (max-width: 480px) {
+    .hero-content {
+        padding: 0 16px;
+    }
+
+    .hero-meta {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hero-title {
+        font-size: clamp(1.6rem, 8vw, 2.2rem);
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        font-size: 0.85rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-stats {
+        gap: 10px;
+    }
+
+    .stat-value {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.55rem;
+    }
+
+    .visual-panel {
+        max-width: 100%;
+    }
+
+    .services {
+        padding: 60px 0;
+    }
+
+    .services-container,
+    .about-container,
+    .contact-container,
+    .footer-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-description {
+        font-size: 0.85rem;
+    }
+
+    .service-row {
+        grid-template-columns: 30px 1fr;
+        gap: 8px;
+        padding: 16px 8px;
+    }
+
+    .service-tag {
+        display: none;
+    }
+
+    .service-desc {
+        max-width: 100%;
+    }
+
+    .about {
+        padding: 60px 0;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-logo-frame {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+    }
+
+    .about-logo-frame img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .about-grid-overlay {
+        inset: -20px;
+    }
+
+    .about-lead {
+        font-size: 1.1rem;
+    }
+
+    .about-text {
+        font-size: 0.85rem;
+    }
+
+    .about-list-item {
+        font-size: 0.85rem;
+    }
+
+    .contact {
+        padding: 60px 0;
+    }
+
+    .contact-grid {
+        gap: 30px;
+    }
+
+    .contact-form {
+        padding: 0;
+    }
+
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+        font-size: 0.85rem;
+        padding: 10px 12px;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .scroll-text {
+        display: none;
+    }
+
+    .hero-scroll-indicator {
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 0.8rem;
+    }
+
+    .stat-value {
+        font-size: 1rem;
+    }
+
+    .nav-brand .brand-text {
+        font-size: 1rem;
+    }
+
+    .logo-mark {
+        width: 32px;
+        height: 32px;
+    }
+
+    .preloader-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
 }
